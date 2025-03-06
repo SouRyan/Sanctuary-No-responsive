@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- control + , para configurar, emmet>varieble -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- myCss -->
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <!-- favicon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <!-- BoxIcon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- fontAwasome -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- aOs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+    <!-- lightBoz -->
+
+    <title>Sanctuary</title>
+  </head>
+
+  <body class="darkMode">
+    <!-- md sanctuary && cd sanctuary && echo index > index.html && echo profile > profile.html &&echo thanks > thanks.html && md css js font img video && echo style > css/style.css & echo script > js/script && code . -->
+
+    <!-- nav>.navBar>(ul.logo#logo>li>a>img)+(ul.navLink>li*4>a>i+span)+(ul.inerSite>li>a>img+span)|c -->
+    <nav>
+      <div class="navBar">
+        <ul class="logo" id="logo">
+          <li>
+            <a href="#home">
+              <img src="./img/logo.webp" alt="Logo" />
+            </a>
+          </li>
+        </ul>
+        <!-- /#logo.logo -->
+        <ul class="navLink">
+          <li class="active">
+            <a href="#home"><i class="bx bxs-home"></i><span>Home</span></a>
+          </li>
+          <li>
+            <a href="#team"
+              ><i class="bx bx-male-female"></i><span>Team</span></a
+            >
+          </li>
+          <li >
+            <a href="#products">
+              <i class="bx bxs-briefcase-alt-2"></i><span>products </span></a
+            >
+          </li>
+          <li >
+            <a href="#contact">
+              <i class="bx bxs-contact"> </i><span>contact </span></a
+            >
+          </li>
+        </ul>
+        <!-- /.navLink -->
+        <ul class="underSide">
+          <li>
+            <a href="./profile.html" target="_blank">
+              <img src="./img/perfil.jpg" alt="perfil" />
+              <span>Profile</span></a
+            >
+          </li>
+        </ul>
+        <!-- /.underSite -->
+      </div>
+      <!-- /.navBar -->
+    </nav>
+
+    <!-- main>.container>(section#home>.homeContainer)+(section#team>.teamContainer)+(section#products>.productsContainer)+(section#contact>.contactContainer)|c -->
+    <main>
+      <div class="container">
+        <section id="home">
+          <div class="homeContainer">
+            <!-- .changeMode>button#*2>i -->
+
+            <div class="changeMode ">
+              <button id="lightMode">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <button id="darkMode">
+                <i class="fa-solid fa-sun"></i>
+              </button>
+            </div>
+
+            <!-- video#+.homeInner>(h1>span^h2>span^p+a.btnDefault)|c -->
+            <video src="./video/candy.mp4" id="video" muted></video>
+            <!-- / -->
+            <div class="homeInner">
+              <h1>Strange<span> Sanctuary Candies</span></h1>
+              <h2>Come <span>yourself</span> and eat a Strange Candies</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur reprehenderit at, beatae aliquam molestias amet! Ipsa
+                repellendus totam velit nesciunt.
+              </p>
+              <a href="#contact" class="btnDefault">Contact Us</a>
+              <!-- /.btnDefault -->
+            </div>
+            <!-- /.homeInner -->
+          </div>
+          <!-- /.homeContainer -->
+        </section>
+        <!-- /#home -->
+        <section id="team" >
+          <div class="teamContainer">
+            <!-- ul.teamCard*4>li>img^li>p{Nome}^li>i*5|c -->
+            <ul class="teamCard">
+              <li><img src="./img/card1.webp" alt=""></li>
+              <li>
+                <p>Fred</p>
+              </li>
+              <li><i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i></li>
+            </ul>
+            <!-- /.teamCard -->
+            <ul class="teamCard">
+              <li><img src="./img/card2.webp" alt=""></li>
+              <li>
+                <p>jully</p>
+                <li><i class="bx bxl-facebook-circle"></i>
+                  <i class="bx bxl-instagram"></i>
+                  <i class="bx bxl-tiktok"></i>
+                  <i class="bx bxl-linkedin-square"></i></li>
+              </li>
+              
+            </ul>
+            <!-- /.teamCard -->
+            <ul class="teamCard">
+              <li><img src="./img/card3.webp" alt=""></li>
+              <li>
+                <p>Paola</p>
+              </li>
+              <li><i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i></li>
+            </ul>
+            <!-- /.teamCard -->
+            <ul class="teamCard">
+              <li><img src="./img/card4.webp" alt=""></li>
+              <li>
+                <p>Catrina  </p>
+              </li>
+              <li><i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i></li>
+            </ul>
+            <!-- /.teamCard -->
+          </div>
+          <!-- /.teamContainer -->
+        </section>
+        <!-- /#team -->
+        <section id="products">
+          <div class="productsContainer">
+            
+          </div>
+          <!-- /.productsContainer -->
+        </section>
+        <!-- /#products -->
+        <section id="contact">
+          <div class="contactContainer">
+            <!-- .localization>h1>span^iframe[id="mapa"]^form>ul.contactForm>li*5>i+input[placeholder=""]^li>textarea[placeholder]^li.btnFit>input:submit.btnDefault[value="send"]+input:reset.btnDefault[value="clear"]^li>p>input:checkbox|c -->
+            <div class="localization">
+              <h1>Contact<span>Us </span></h1>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.4271078459568!2d139.70215006965918!3d35.65955459828716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b0023d9d973%3A0xf9913d7822189c04!2z5riL6LC35Yy66L-R5Luj5a2m5qCh5pWZ6IKy55m656Wl44Gu5Zyw!5e0!3m2!1spt-BR!2sbr!4v1740784862889!5m2!1spt-BR!2sbr"frameborder="0" id="mapa" ></iframe>
+           
+              <!-- /#mapa -->
+            </div>
+            <!-- /.localization -->
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <ul class="contactForm">
+                <li><i class="bx bxs-user-check"></i><input required type="text" placeholder="Name:" name="name"></li>
+
+                <li><i class="bx bxs-envelope"></i><input type="email" placeholder="Email" name="email"></li>
+
+                <li><i class="bx bxs-phone-call"></i><input required type="tel" placeholder="Phone" name="phone" onkeypress="$(this).mask('(00)00000-0000')"></li>
+
+                <li><i class="bx bxs-chat"></i><input type="text" placeholder="subject" name="subject"></li>
+                
+                <!-- <li><i></i><input type="text" placeholder=""></li> -->
+
+                <li><textarea required placeholder="message:" name="message"></textarea>
+                  <!-- /# --></li>
+                <li class="btnFit">
+                  <input type="submit" value="send" class="btnDefault">
+                  <input type="reset" value="clear" class="btnDefault">
+                </li>
+                <!-- /.btnFit -->
+                <li>
+                  <p><input type="checkbox" >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nesciunt unde. Nostrum ratione neque distinctio consequuntur doloremque voluptatum est incidunt.
+                </p>
+                </li>
+              </ul> 
+              
+                <input type="hidden" name="accessKey" value="b0f03c4f-7daa-4ee8-a288-dc70543abef3">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
+          
+              <!-- /.contactForm -->
+            </form>
+          </div>
+             <!-- https://www.staticforms.xyz/ -->
+
+
+          <!-- /.contactContainer -->
+           <!-- footer>ul.footerContainer>li>h1{Sanctuary }>span{Strange}{Candies}^^li*4>i^li>p{&copy; Copyright all rights reserved 2012 sanctuary}|c -->
+           <footer>
+            <ul class="footerContainer">
+              <li>
+                <h1>Sanctuary <span>Strange</span> Candies</h1>
+              </li>
+              <li><i class="bx bxl-facebook-circle"></i></li>
+              <li><i class="bx bxl-instagram"></i></li>
+              <li><i class="bx bxl-tiktok"></i></li>
+              <li><i class="bx bxl-linkedin-square"></i></li>
+              <li>
+                <p>&copy; Copyright all rights reserved 2012 sanctuary</p>
+              </li>
+            </ul>
+            <!-- /.footerContainer -->
+           </footer>
+        </section>
+        <!-- /#contact -->
+      </div>
+      <!-- /.container -->
+    </main>
+
+    <!-- https://cdnjs.com/ -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jquery -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- jquerymask -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js
+  "></script>
+    <!-- lightbox -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js
+   "></script>
+    <!-- isotope -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js
+    "></script>
+    <!-- aOs -->
+    <script src="./js/script.js"></script>
+    <!-- myJs -->
+  </body>
+</html>

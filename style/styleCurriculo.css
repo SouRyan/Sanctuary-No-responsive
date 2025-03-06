@@ -1,0 +1,232 @@
+/*basic reset*/
+/* #region global  */
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--clr-text);
+}
+/* #region  Curriculo*/
+body {
+  
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--clr-base);
+  
+}
+.lightMode {
+  --clr-default: #cbcbcb;
+  --clr-base: #e0e0e0;
+  --clr-text: #181818;
+  --clr-accent: #fabcc9;
+  --clr-accent-bg: #fabcc960;
+  --clr-fake--menu-bg: #ffffff90;
+  --clr-no-color: transparent;
+  --clr-shadow: #a0a0a0;
+  --clr-black: #000000;
+  & #logo {
+    filter: invert(1);
+  }
+  & #mapa {
+    filter: invert(0);
+  }
+}
+
+.darkMode {
+  --clr-default: #333333;
+  --clr-base: #151515;
+  --clr-text: #f5f5f5;
+  --clr-accent: #e80032;
+  --clr-accent-bg: #e8003260;
+  --clr-fake--menu-bg: #00000090;
+  --clr-no-color: transparent;
+  --clr-shadow: #3d3d3d;
+  --clr-black: #000000;
+  & #logo {
+    filter: invert(0);
+  }
+  & #mapa {
+    filter: invert(1);
+  }
+}
+h1,h2,h3{
+  text-transform: capitalize;
+}
+/*#endregion*/
+
+
+.CurriculoCenter {
+  height: 100%;
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+
+  & .left {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-right: 1px solid var(--clr-text);
+    & img {
+      width: 100%;
+      z-index: -1;
+    }
+    & .text {
+      text-align: justify;
+    }
+    & i {
+      transition: all .3s;
+      font-size: 40px;
+      &:hover {
+        color: var(--clr-accent);
+        text-shadow: 1px 1px 5px var(--clr-black);
+      }
+    }
+  }
+  & .right {
+    padding: 20px;
+    display: flex;
+    height: 80%;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    #idiomas{
+      padding: 30px;
+      & li{
+        list-style: circle;
+      }
+    }
+  }
+}
+
+/*#endregion*/
+/* #region media */
+
+
+
+
+@media (max-width: 1224px) {
+  .CurriculoCenter {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body{
+    overflow: scroll;
+  }
+  .CurriculoCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .left {
+      width: 60%;
+      border-right: 0;
+    }
+    .right {
+
+      border-top: 1px solid white;
+    }
+  }
+}
+@media print{
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    list-style: none !important;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: var(--clr-black);
+  }
+  
+  .CurriculoCenter {
+    margin: 0px auto !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+      filter: grayscale(1);
+    }
+    .left{
+      padding: 10px !important;
+    }
+    .right {
+      padding: 10px !important;
+      border-left: 1px solid black;
+    }
+    i{
+      line-height: .2em !important;
+      &::before{
+        content: attr(data-url) !important;
+        /* subtitui o incone pela url */
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    }
+    /* Ajustar ,argens e espaçamentos para a impressão */
+    @page{
+     margin: 3em !important;
+     
+   }
+   /* Forçar quebra de pagina com cada seção */
+   section{
+    page-break-after: always !important;
+   }
+  }
+
+ .backSanct{
+  display: none !important;
+ }
+ .changeMode{
+  display: none !important;
+ }
+ }
+
+/*#endregion*/
+
+& .changeMode {
+  position: fixed; 
+  right: 1rem;
+  top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--clr-accent);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  & button {
+    background-color: var(--clr-no-color);
+    border: none;
+    & i {
+      cursor: pointer;
+      font-size: var(--txt-subtitle);
+    }
+  }
+  & #darkMode {
+    display: none;
+  }
+}
+.backSanct{
+  position: fixed;
+  left: 1rem;
+  top: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--clr-accent);
+}

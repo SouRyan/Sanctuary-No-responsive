@@ -416,6 +416,67 @@ section#team {
 
 /*#endregion*/
 
+/* #region  products*/
+
+section#products {
+  background: var(--clr-base);
+  & .productsContainer {
+    background: var(--clr-base);
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    column-gap: 0.8em;
+    row-gap: 0.6em;
+    padding: 6em 12em;
+    & .productsInner {
+      position: relative;
+      padding: 0.5em;
+      & img {
+        width: 100%;
+        height: auto;
+        filter: saturate(0.8) opacity(0.5);
+        border: 10px solid var(--clr-text);
+        border-radius: 1.5em;
+        transition: all .3s;
+        &:hover {
+          filter: saturate(1) opacity(1);
+          transform: scale(1
+          .05);
+        }
+      }
+     
+    }
+  }
+  & ul.filter{
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    & li{
+      background: var(--clr-default);
+      padding: 1em 1.5em;
+      margin-bottom: 1em;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 2px solid var(--clr-no-color);
+      transition: all .3s;
+      &:hover{
+        background: var(--clr-accent);
+        border: 2px solid var(--clr-default);
+      }
+      &.active{
+        background: var(--clr-accent);
+        border: 2px solid var(--clr-default);
+      }
+    }
+  }
+}
+
+
+/*#endregion*/
+
 /* #region thanks */
 
 #thanks {
@@ -511,8 +572,7 @@ section#team {
             z-index: 99;
             padding: 0.1em;
             background: var(--clr-accent);
-            border-radius:  0.2em 0 0 0.2em ; 
-
+            border-radius: 0.2em 0 0 0.2em;
           }
           & input[type="text"],
           input[type="email"],
@@ -556,12 +616,12 @@ section#team {
         } */
         & i {
           font-size: var(--txt-title);
-          transition: all .3s;
-          &:hover{
+          transition: all 0.3s;
+          &:hover {
             transform: scale(1.5);
             cursor: pointer;
             color: var(--clr-accent);
-            text-shadow: 1px 1px 1px var(--clr-shadow)
+            text-shadow: 1px 1px 1px var(--clr-shadow);
           }
         }
         /* & p {

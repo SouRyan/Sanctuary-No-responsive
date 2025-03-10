@@ -58,7 +58,7 @@ O projeto faz uso de diversas **CDNs** para otimizar o carregamento e adicionar 
 ## 📬 Contato  
 
 - Email: ryanbrayan.fs@gmail.com  
-- Linkedin: [Ryan Brayan](https://www.linkedin.com/in/ryan-brayan-franca-souza-35968723b/)  
+- Linkedin: [Ryan Brayan](https://www.openlinkedin.com/in/ryan-brayan-franca-souza-35968723b/)  
 
 ---
 

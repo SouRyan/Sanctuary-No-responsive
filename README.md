@@ -1,4 +1,4 @@
-# 🍬 Site de Doces  
+# 🍬 Sanctuary Candys - Um site de doces   
 
 ## 📜 Descrição  
 
